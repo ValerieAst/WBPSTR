@@ -1,0 +1,87 @@
+@import "styles/reset.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,600,700,800,900|Playfair+Display:400,700,900&subset=cyrillic,cyrillic-ext');
+
+body {
+  margin: 0 40px 0 40px;
+}
+
+header {
+  background-color: grey;
+}
+
+section {
+ padding: 0 0 120px 0;
+}
+
+.logo {
+  width: 65px;
+  height: 58px;
+}
+
+.intro_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.intro_heading {
+  display: flex;
+  flex-direction: row;
+  margin-right: 81px;
+}
+
+h4 {
+  width: 152px;
+  margin: 110px 0 0 0;
+
+  font-family: Montserrat Alternates;
+  font-weight: 300;
+  font-size: 48px;
+  text-align: right;
+}
+
+h2 {
+  width: 257px;
+  margin: 95px 0 60px 0;
+
+  font-family: Playfair Display;
+  font-size: 96px;
+  text-align: left;
+}
+
+p {
+  width: 544px;
+
+  font-family: Montserrat Alternates;
+  font-size: 36px;
+  margin: 0 0 40px 0;
+
+  color: #000000;
+}
+
+.library {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.library_text {
+  width: 428px;
+  height: 997px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 95px 0 95px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.column {
+  width: 388px;
+  height: 829px;
+  background: grey;
+}
