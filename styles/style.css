@@ -5,26 +5,120 @@ body {
   margin: 0 40px 0 40px;
 }
 
+/* header */
+
 header {
   background-color: grey;
+  height: 200px;
 }
 
-section {
- padding: 0 0 120px 0;
+nav {
+  width: 450px;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 0 40px;
+
 }
 
 .logo {
-  width: 65px;
+  width: 63px;
   height: 58px;
 }
 
-.intro_text {
+a {
+  font-family: Montserrat Alternates;
+  font-weight: 300;
+  font-size: 24px;
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+/* main */
+
+.photos {
+  width: 956px;
+  height: 776px;
+  margin: -92px 239px 0 244px;
+  background-color: green;
+}
+
+/* top */
+
+.top {
+  margin-left: 544px;
+}
+
+.top img {
+  width: 330px;
+  height: 435px;
+}
+
+/* middle */
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mid1, .mid2 {
+  margin-top: -150px;
+}
+
+.mid1 img {
+  width: 267px;
+  height: 434px;
+}
+
+.mid2 img {
+  width: 315px;
+  height: 471px;
+}
+
+.mid3 {
+  margin-top: -60px;
+}
+
+.mid3 img {
+  width: 236px;
+  height: 354px;
+}
+
+/* bot */
+
+.bot {
+margin: -60px 0 0 135px;
+}
+
+.bot img {
+  width: 336px;
+  height: 341px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: flex-end;
+  height: 924px;
+  background-color: blue;
+  margin-bottom: 160px;
+}
+
+.about_text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.intro_heading {
+.about_heading {
   display: flex;
   flex-direction: row;
   margin-right: 81px;
@@ -55,33 +149,96 @@ p {
   font-family: Montserrat Alternates;
   font-size: 36px;
   margin: 0 0 40px 0;
-
-  color: #000000;
 }
 
-.library {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
-
-.library_text {
-  width: 428px;
-  height: 997px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 95px 0 95px;
-}
-
-.photos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
+/* archieve */
 
 .column {
-  width: 388px;
-  height: 829px;
-  background: grey;
+width: 388px;
+height: 829px;
+background-color: grey;
+}
+
+.archieve {
+display: flex;
+justify-content: space-between;
+}
+
+.archieve_text {
+  margin: -104px 95px 0 95px;
+}
+
+.archieve_text h4 {
+  margin-top: 14px;
+}
+
+.archieve_text h2 {
+  margin:0 0 60px 0;
+}
+
+.archieve_text p {
+  width: 449px;
+}
+
+.archieve_heading {
+  display: flex;
+  flex-direction: row;
+}
+
+/* contact */
+
+.contact_heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_text h4, .contact_text h2 {
+  text-align: left;
+  width: auto;
+}
+
+.contact_text p {
+  width: 524px;
+}
+
+.contact_text {
+  margin-left: 186px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.mail h4 {
+  font-weight: normal;
+  margin-top: 55px;
+}
+
+.mail {
+  width: 660px;
+  height: 169px;
+  background-color: red;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 124px;
+  background-color: grey;
+}
+
+h3 {
+  font-family: Montserrat Alternates;
+  font-weight: 300;
+  font-size: 24px;
+
+  color: #FFFFFF;
+
 }
