@@ -1,8 +1,11 @@
 @import "styles/reset.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,600,700,800,900|Playfair+Display:400,700,900&subset=cyrillic,cyrillic-ext');
 
+
 body {
-  margin: 0 40px 0 40px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* header */
@@ -13,12 +16,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-image: url(header.png);
+  background-size: cover;
 }
 
-
-
 nav {
-  width: 450px;
+  width: 600px;
   height: 94px;
   display: flex;
   flex-direction: row;
@@ -36,7 +38,7 @@ nav {
 a {
   font-family: Montserrat Alternates;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 36px;
   text-decoration: none;
   color: #000000;
 }
@@ -47,7 +49,7 @@ h1 {
   font-size: 96px;
   text-align: center;
   margin: 0;
-  padding: 20px 100px 0 0;
+  padding: 20px 80px 0 20px;
 }
 
 /* about */
@@ -61,7 +63,12 @@ h1 {
 .first img {
   width: 100%;
   height: 1500px;
-  filter: blur(3px);
+  filter: blur(0px);
+  opacity: 0.7;
+}
+
+.first img:hover {
+  filter: blur(7px);
 }
 
 section {
@@ -112,16 +119,11 @@ p {
 
 /* archieve */
 
-.column {
-width: 388px;
-height: 829px;
-background-color: grey;
-}
-
 .archieve {
 display: flex;
 justify-content: space-between;
 background-image: url(bg.png);
+background-size: cover;
 }
 
 .archieve_text {
@@ -150,13 +152,19 @@ background-image: url(bg.png);
 .second img {
 width: 100%;
 height: 2000px;
-filter: blur(3px);
+filter: blur(0px);
+opacity: 0.7;
 }
 
 .second {
 position: absolute;
 top: 1350px;
 }
+
+.second img:hover {
+  filter: blur(7px);
+}
+
 
 .contact_heading {
   display: flex;
@@ -185,7 +193,7 @@ top: 1350px;
 
 .mail h4 {
   font-weight: normal;
-  margin-top: 55px;
+  margin: 55px 0 0 40px;
 }
 
 .mail {
@@ -208,8 +216,84 @@ footer {
 h3 {
   font-family: Montserrat Alternates;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 32px;
 
   color: #FFFFFF;
+
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    padding: 30px 20px 0 0;
+    font-size: 78px;
+  }
+
+  p {
+    font-size: 34px;
+    width: 400px;
+    margin-right: 48px;
+  }
+
+  .archieve {
+    justify-content: center;
+  }
+
+  .archieve_text {
+    margin: 0;
+  }
+
+  .contact_text {
+    margin-left: 100px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px){
+
+  header {
+    width: auto;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    padding: 50px 20px 0 20px;
+    justify-content:space-around;
+  }
+
+  h1 {
+    font-size: 110px;
+    padding-right: 0;
+  }
+
+  .memento {
+    margin-bottom: -50px;
+  }
+
+  a {
+    font-size: 36px;
+  }
+
+  .about {
+    justify-content: center;
+  }
+
+  .archieve {
+    justify-content: center;
+  }
+
+  .archieve_text {
+    width: 800px;
+    margin: 0;
+  }
+
+  .archieve p {
+    width: 800px;
+    margin-right: 0;
+  }
+
+  p {
+    font-size: 40px;
+  }
 
 }
